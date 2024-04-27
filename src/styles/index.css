@@ -1,0 +1,182 @@
+/* did this so that the nav-bar background width would lay on the 100% of the body  */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* global styles */
+
+.btn {
+  border: 1px solid #4a31cb;
+  padding: 10px;
+  text-decoration: none;
+  transition: 0.5s color ease-out 0.5s background-color ease;
+  display: inline-block;
+  margin-bottom: 10px;
+  background-color: transparent; /* we added this to override the style of submit button at the form  */
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  background-color: #4a31cb;
+  color: white;
+}
+
+.sub-title {
+  line-height: 1;
+  font-family: pacifico, sans-serif;
+}
+
+/* Style for the title */
+.title {
+  margin-top: 0;
+  line-height: 1;
+  font-size: 50px;
+  text-align: center;
+  font-family: pacifico, sans-serif;
+}
+
+/* Style for the first letter of the title using "first letter" pseudo class*/
+.title::first-letter {
+  font-size: 70px;
+}
+
+/* Style for the navigation bar */
+
+.nav-bar {
+  background-color: #4a31cb;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.nav-bar-item {
+  color: white;
+  padding: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-bar-item:hover {
+  background-color: #3d26ab;
+  color: white;
+}
+
+/* Collection */
+#collection {
+  margin: 30px 120px 30px 120px;
+}
+
+/* feet icon styles */
+.icon-container {
+  border: 2px solid #4a31cb;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+i {
+  font-size: 25px;
+}
+
+/* style for image */
+
+img {
+  max-width: 100%;
+}
+
+.image-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.collection-content {
+  font-family: "Times New Roman", Times, serif;
+  letter-spacing: 0.3mm;
+}
+
+/* testimonials */
+#testimonials {
+  background-color: rgb(244, 247, 253);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#testimonials .sub-title {
+  margin: 30px 120px 30px 120px;
+}
+
+blockquote {
+  margin: 30px 120px 30px 120px;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+}
+
+#testimonials p {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bolder;
+}
+
+blockquote .author {
+  color: #727272;
+  font-family: Edu TAS Beginner;
+}
+
+/* Contact */
+#contact {
+  margin: 30px 120px 30px 120px;
+}
+
+#contact label {
+  text-transform: uppercase;
+}
+
+#contact button {
+  padding: 15px;
+  text-transform: uppercase;
+  border: 2px solid #4a31cb;
+}
+
+#contact form .form-group:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+#contact form input,
+#contact form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #4a31cb;
+  border-radius: 4px;
+}
+
+#contact form input:focus,
+#contact form textarea:focus {
+  outline: none;
+  border-color: #1f135d;
+}
+
+#contact .form-group .submit {
+  border: 2px solid #4a31cb;
+  background-color: transparent;
+}
+
+/* footer */
+footer {
+  background-color: #4a31cb;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: 1px;
+  color: white;
+}
